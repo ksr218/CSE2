@@ -35,16 +35,30 @@ public class Arithmetic{
         //Sales tax on total cost of socks
         double taxtotalsockcost$=totalsockcost$*taxPercent;
         
-        //Total cost of drinking glasses
+        taxtotalsockcost$=taxtotalsockcost$*100;
+        taxtotalsockcost$=(double)((int)(taxtotalsockcost$));
+        taxtotalsockcost$=taxtotalsockcost$/100;
+        
+         //Total cost of drinking glasses
         double totalglasscost$=nGlasses*glassCost$;
-        //Sales tax on total cost of socks
+        //Sales tax on total cost of glasses
         double taxtotalglasscost$=totalglasscost$*taxPercent;
         
-        //Total cost of socks
+        taxtotalglasscost$=taxtotalglasscost$*100;
+        taxtotalglasscost$=(double)((int)(taxtotalglasscost$));
+        taxtotalglasscost$=taxtotalglasscost$/100;
+        
+         //Total cost of box of envelopes
         double totalenvelopecost$=nEnvelopes*envelopeCost$;
-        //Sales tax on total cost of socks
+        //Sales tax on total cost of envelops
         double taxtotalenvelopecost$=totalenvelopecost$*taxPercent;
         
+        taxtotalenvelopecost$=taxtotalenvelopecost$*100;
+        taxtotalenvelopecost$=(double)((int)(taxtotalenvelopecost$));
+        taxtotalenvelopecost$=taxtotalenvelopecost$/100;
+        
+       
+       
         //Total cost of purchases (before tax)
         double totalpretaxcost$=totalsockcost$+totalglasscost$+totalenvelopecost$;
         
@@ -53,6 +67,8 @@ public class Arithmetic{
         
         //Total cost of purchases (after tax)
         double totalposttaxcost$=totalpretaxcost$-totalsalestax$;
+        
+        
 
 /////////////////////////////////////////////////////////////
 
