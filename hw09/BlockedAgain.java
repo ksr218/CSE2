@@ -2,10 +2,9 @@
 //hw09 - MethodCalls.java
 /*
     This program involves the usage of seven different methods outside the main method, which will
-    ultimately print out a pyramid of numbers, similar to that in NumberStack.java in hw07. For the 
-    first three methods, calls can go back and forth depending on the user's input. If the input 
-    does not meet certain conditions, the program will continue to ask the user for input until the 
-    conditions are properly met.
+    ultimately print out a pyramid of numbers, similar to that in NumberStack.java in hw07. Calls can go 
+    back and forth depending on the user's input. If the input does not meet certain conditions, 
+    the program will continue to ask the user for input until the conditions are properly met.
 */
 
 //import Scanner class
@@ -56,8 +55,7 @@ public static int checkInt(Scanner scan)
     
     
     //If it does not hold an int value, then the program prints out an error message and 'result'
-    //calls the first method, scan(), which repeats the program from the second method and forces
-    //the user to input another value.
+    //calls the second method, scan(), which repeats the program from there and forces the user to input another value.
     else
     {   
         System.out.print("You did not enter an int; try again: ");
@@ -79,8 +77,7 @@ public static int checkRange(int number)
     }
     
     //If it does not hold a value between 1 and 9, then the program prints out an error message and 'number'
-    //calls the second method, scan(), which repeats the program from the first method and forces
-    //the user to input another value.
+    //calls the second method, scan(), which repeats the program from there and forces the user to input another value.
     else
     {
         System.out.print("You did not enter an int in [1,9]; try again: ");
